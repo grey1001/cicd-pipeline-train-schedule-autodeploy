@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        tools {
-  jdk 'myjava'
+        label 'agent1'
 }
-  label 'agent1'
+    tools {
+  jdk 'myjava'
 }
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
