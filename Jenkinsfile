@@ -6,12 +6,13 @@ pipeline {
         //be sure to replace "bhavukm" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "greyabiwon/train-schedule"
     }
+            
     stages {
         stage('Checkout Source') {
             steps {
                 git 'https://github.com/grey1001/cicd-pipeline-train-schedule-autodeploy.git'
             }
-    stages {
+        }    
         stage('Build') {
             steps {
                 echo 'Running build automation'
