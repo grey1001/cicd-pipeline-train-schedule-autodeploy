@@ -4,6 +4,7 @@ pipeline {
 }
     tools {
   jdk 'myjava'
+  gradle 'mygradle'
 }
     environment {
         //be sure to replace "bhavukm" with your own Docker Hub username
