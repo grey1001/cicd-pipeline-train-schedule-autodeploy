@@ -1,5 +1,8 @@
 pipeline {
     agent {
+        tools {
+  jdk 'myjava'
+}
   label 'agent1'
 }
     environment {
